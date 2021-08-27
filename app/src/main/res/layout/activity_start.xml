@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/bac_coolr">
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="196dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn"
+        android:text="ИГРАТЬ"
+        android:textSize="24sp"
+        android:fontFamily="@font/to_japan"
+        />
+
+    <ImageView
+        android:id="@+id/bacX_start"
+        android:layout_width="338dp"
+        android:layout_height="337dp"
+        android:src="@drawable/ic_vector_1__stroke_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tv_start"
+        android:layout_marginEnd="55dp"
+        />
+
+    <ImageView
+        android:id="@+id/bacO_start"
+        android:layout_width="300dp"
+        android:layout_height="370dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imageO_start"
+        android:background="@drawable/ic_ellipse_1__stroke_"
+        />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        android:text="КРЕСТИКИ\n НОЛИКИ"
+        android:textSize="42sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/to_japan"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageX_start"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_start"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="@id/imageO_start"
+        app:cardCornerRadius="28dp"
+        android:backgroundTint="@color/white"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_vector_1"
+            android:layout_margin="30dp"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageO_start"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintStart_toEndOf="@id/imageX_start"
+        app:layout_constraintTop_toBottomOf="@id/tv_start"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="26dp"
+        android:backgroundTint="@color/white"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_ellipse_1"
+        android:layout_margin="30dp"
+        />
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
